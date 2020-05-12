@@ -15,4 +15,7 @@ lb.place(x=70, y=5)
 ed = tkinter.Entry(janela, width=50)
 ed.place(x=20, y=35)
 
+bt = tkinter.Button(janela, width=40, text='Download')
+bt.place(x=27,y=62)
+
 janela.mainloop()
