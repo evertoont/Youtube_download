@@ -2,6 +2,15 @@ import pytube
 import tkinter
 from tkinter import messagebox
 
+def download():
+    video_url = str(ed.get())
+
+    try:
+        pytube.YouTube(video_url).streams.first().download()
+        messagebox.showinfo('Download realizado!','Seu video está na pasta onde se encontra o arquivo!')
+    except:
+        messagebox.showinfo('Falha do download','Verifique a url do seu video')
+
 
 # Criação da janela de interação usando kinter
 
@@ -15,7 +24,7 @@ lb.place(x=70, y=5)
 ed = tkinter.Entry(janela, width=50)
 ed.place(x=20, y=35)
 
-bt = tkinter.Button(janela, width=40, text='Download')
+bt = tkinter.Button(janela, width=40, text='Download', command=download)
 bt.place(x=27,y=62)
 
 janela.mainloop()
