@@ -18,4 +18,4 @@ pip install pytube3
 ### :camera: Imagem do projeto
 ![Imagem do programa em execução](imagem.png) <br>
 
-**Desenvolvedor:** Everton Oliver
+**Desenvolvedor:** Everton Reis
